@@ -9,8 +9,20 @@
 	<jsp:attribute name="footer">
     </jsp:attribute>
 	<jsp:body>
-	<c:forEach items="${webpages}" var="user">
+
+	
+
+		<c:forEach items="${webpages}" var="user">
 			<h1>${user.content}</h1>
+ <textarea name="txtnoidung" id="txtnoidung" 
+ value="${user.content}"></textarea></td>
+
+
+<script type="text/javascript" language="javascript">
+
+CKEDITOR.replace( 'txtnoidung' );
+
+</script> 
 	</c:forEach>
        		<%-- 		<div id='ctl06_portlet_43f9ded1-4c3b-4b8b-8d8a-01a3ec30711c'
 							style="float: left;">

@@ -75,6 +75,25 @@ public class FileUploadController {
     public String homepage(Model model){
 		return "jsp/Default71a5.jsp?PageId=8cb7e0c5-10f3-438b-8881-a74c24b373e3";	
     }
+    @RequestMapping(value = { "/venuehotel" }, method = RequestMethod.GET)
+    public String hotelmapping(Model model){
+		return "jsp/Venue_Hotel";	
+    }
+    
+    @RequestMapping(value = { "/latestnewsFirst" }, method = RequestMethod.GET)
+    public String latestnewsFirst(Model model){
+		return "jsp/index52be.jsp?ArticleId=3af2fa01-2645-4516-a65a-67bfec768e13";	
+    }
+    
+    
+    @RequestMapping(value = { "/latestnewsSecond" }, method = RequestMethod.GET)
+    public String latestnewsSecond(Model model){
+		return "jsp/indexe41c.jsp?ArticleId=bc474489-26ce-4997-a1c0-b37dce27b202";	
+    }
+    
+    
+    
+    
     
     
     

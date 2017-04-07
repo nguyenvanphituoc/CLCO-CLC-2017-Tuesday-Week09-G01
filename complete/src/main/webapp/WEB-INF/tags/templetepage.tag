@@ -153,9 +153,12 @@
 			type="text/javascript"></script>
 
 
-		<script
-			src="<c:url value = "js/Telerik.Web.UI.WebResourcec672.js"/>?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a509f92a1-e5fd-464f-a450-13846a6c973b%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c+Version%3d2011.1.315.35%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ae4ca4719-c559-4761-8501-9be20bbda1fe%3a16e4e7cd%3a874f8ea2%3af7645509%3a24ee1bba%3af46195d3%3a19620875%3a490a9d4e%3abd8f85e4%3ae330518b%3a1e771326%3ac8618e41"
-			type="text/javascript"></script>
+	
+			
+			
+			
+	<script src="<c:url value="js/Telerik.Web.UI.WebResource82d2.js"/>" 
+	type="text/javascript"></script>
 		<script type="text/javascript">
 			//<![CDATA[
 			if (typeof (Sys) === 'undefined')
@@ -451,11 +454,12 @@
 													<li class="rmItem "><a
 														href="Portlets/MenuRad/index.html#"
 														class="rmLink rmRootLink"><span class="rmText">Program</span></a></li>
-													<li class="rmItem "><a
-														href="Portlets/MenuRad/index.html#"
+													<li class="rmItem ">
+													<a	href="<c:url value="/venuehotel"/>"
 														class="rmLink rmRootLink"><span class="rmText">Venue
 																& Hotel</span></a></li>
-													<li class="rmItem rmLast"><a
+													<li class="rmItem rmLast">
+													<a
 														href="<c:url value="/contact"/>"
 														class="rmLink rmRootLink"><span class="rmText">Contact</span></a></li>
 												</ul>
@@ -503,12 +507,12 @@
         <ul>
             
 
-                    <li><a href="index52be.html?ArticleId=3af2fa01-2645-4516-a65a-67bfec768e13">
+                    <li><a href="<c:url value="/latestnewsFirst"/>">
                         <p>Create Date 09/03/2017</p>
                         SPECIAL SESSION 02 FOR ICSSE2017: FUZZY SYSTEMS AND ITS APPLICATIONS</a></a> </li>
                 
 
-                    <li><a href="indexe41c.html?ArticleId=bc474489-26ce-4997-a1c0-b37dce27b202">
+                     <li><a href="<c:url value="/latestnewsSecond"/>">
                         <p>Create Date 07/03/2017</p>
                         ABSTRACT DEADLINE EXTENSION: MARCH 19, 2017</a></a> </li>
                 

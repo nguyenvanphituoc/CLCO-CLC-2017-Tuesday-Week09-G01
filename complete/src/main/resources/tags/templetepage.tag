@@ -416,7 +416,7 @@
 												style="height: 40px; z-index: 1; width: 100%;">
 												<ul class="rmRootGroup rmHorizontal">
 													<li class="rmItem rmFirst"><a
-														href="<c:url value="/home_page"/>"
+														href="Default71a5.html?PageId=8cb7e0c5-10f3-438b-8881-a74c24b373e3"
 														class="rmLink rmRootLink"><span class="rmText">Home</span></a></li>
 													<li class="rmItem "><a
 														href="Portlets/MenuRad/index.html#"
@@ -435,17 +435,18 @@
 															</ul>
 														</div></li>
 													<li class="rmItem ">
-												<a href="<c:url value="/callpaper"/>"
+												
+												<a href="<c:url value="/jsp/Default789b.jsp"/>?ArticleId=fc8c1223-a9d2-46b5-9db3-665c778f0ac9"
 														class="rmLink rmRootLink"><span class="rmText">Call
 																for papers</span></a></li>
 													<li class="rmItem "><a
-														href="<c:url value="/submission"/>"
+														href="Defaultd478.html?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef"
 														class="rmLink rmRootLink"><span class="rmText">Submission</span></a></li>
 													<li class="rmItem "><a
-														href="<c:url value="/registation"/>"
+														href="Defaulta8ef.html?ArticleId=707e0e24-5220-4821-a40f-4041eb76cc1a"
 														class="rmLink rmRootLink"><span class="rmText">Registration</span></a></li>
 													<li class="rmItem "><a
-														href="<c:url value="/keynotespeaker" />"
+														href="Default6b73.html?ArticleId=be204435-0615-4fc3-aa86-392d871decc8"
 														class="rmLink rmRootLink"><span class="rmText">Keynote
 																Speakers</span></a></li>
 													<li class="rmItem "><a
@@ -456,7 +457,7 @@
 														class="rmLink rmRootLink"><span class="rmText">Venue
 																& Hotel</span></a></li>
 													<li class="rmItem rmLast"><a
-														href="<c:url value="/contact"/>"
+														href="Default84ba.html?ArticleId=b4031ebe-e802-4402-a49a-5769943872a5"
 														class="rmLink rmRootLink"><span class="rmText">Contact</span></a></li>
 												</ul>
 												<input

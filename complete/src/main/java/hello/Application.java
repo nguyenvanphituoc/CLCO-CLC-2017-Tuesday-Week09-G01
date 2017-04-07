@@ -20,13 +20,13 @@ public class Application extends SpringBootServletInitializer{
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	CommandLineRunner init(StorageService storageService) {
 		return (args) -> {
             storageService.deleteAll();
             storageService.init();
 		};
-	}
+	}*/
 	@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(Application.class);

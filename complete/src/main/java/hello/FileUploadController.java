@@ -44,9 +44,8 @@ public class FileUploadController {
     }
     
     @RequestMapping("/")
-    public String listUploadedFiles(Model model) throws IOException {
-
-    	
+    public String listUploadedFiles(Model model) throws IOException
+    {
     	List<webInfo> webpages=webInfoService.findAllWebPages();
     	model.addAttribute("webpages",webpages);
         return "jsp/example";
@@ -143,12 +142,10 @@ public class FileUploadController {
 	}
 	
 	@RequestMapping(value = { "/edit-webpage-{pageID}" }, method = RequestMethod.POST)
-	public String updateUser(@Valid webInfo webInfo, BindingResult result,
+	public String updateUser(@Valid webInfo webInfo, 
 			ModelMap model, @PathVariable int pageID) {
 
-		if (result.hasErrors()) {
-			return "jsp/regist";
-		}
+	
 
 		webInfoService.updateWebpage(webInfo);
 

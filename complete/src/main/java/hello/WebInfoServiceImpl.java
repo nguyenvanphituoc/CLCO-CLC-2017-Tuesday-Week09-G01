@@ -27,8 +27,10 @@ public class WebInfoServiceImpl implements WebInfoService {
 
 	@Override
 	public void updateWebpage(webInfo webInfo) {
-
-		webInfo entity=dao.findByid(webInfo.getPage_id());
+		System.out.println(webInfo.getPage_id());
+		String s=webInfo.getPage_id().toString();
+		int id=Integer.parseInt(s);
+		webInfo entity=dao.findByid(id);
 		if(entity!=null){
 			entity.setDescription(webInfo.getDescription());
 			entity.setContent(webInfo.getContent());

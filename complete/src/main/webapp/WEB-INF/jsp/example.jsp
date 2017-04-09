@@ -14,19 +14,15 @@
 
 	
 
-<%-- 	
- <textarea name="txtnoidung" id="txtnoidung" >
- </textarea>
- 
- <input type="submit" value=""/>
-  --%>
+
+
   
   
- <div id="trackingDiv"></div>
-		<table>
-<tbody>
+ </br>
+</br>
+<%-- 
 					<c:forEach items="${webpages}" var="web">
-						<tr>
+				
 							<td>${web.page_id}</td>
 							<td>${web.description}</td>
 							<td>${web.content}</td>
@@ -44,17 +40,19 @@
 					<td><a href="<c:url value='/new-webpage' />"
 							class="btn btn-danger custom-width">new </a></td>
 		    		</tbody>
-		    	</table>
+		    	</table>  --%>
+		    	
+		    	<c:forEach items="${webpages}" var="web">
+		    		${web.content}
+		    	
+		    		</c:forEach>
 		    	
 
 
-<script type="text/javascript" language="javascript">
-	CKEDITOR.replace('txtnoidung');
-</script>  
 	
-	
+	<%-- 
 
-       		<%-- 		<div id='ctl06_portlet_43f9ded1-4c3b-4b8b-8d8a-01a3ec30711c'style="float: left;"><div><style></style>
+       		 		<div id='ctl06_portlet_43f9ded1-4c3b-4b8b-8d8a-01a3ec30711c'style="float: left;"><div><style></style>
 											<div id="main">
 												<div id="head"></div>
 												<div id="head-link"></div>

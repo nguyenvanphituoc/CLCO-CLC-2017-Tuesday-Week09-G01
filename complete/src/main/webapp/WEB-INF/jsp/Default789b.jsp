@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <t:templetepage>
 	<jsp:attribute name="header">     
     </jsp:attribute>
@@ -9,20 +9,7 @@
     </jsp:attribute>
 	<jsp:body>
 	
-	<link href="Modules/TopicArticleDisplay.css" rel="stylesheet" type="text/css" />
-
-<script type="text/javascript">
-    function OnSendArticle() {
-        var result = window.showModalDialog("/Modules/CMS/SendArticle.aspx", document.URL, "dialogHeight: 320px; dialogWidth: 450px;");
-    }
-    function OnBack() {
-        window.history.back();
-    }
-    function OnGoToHead() {
-        window.moveTo(0, 0);
-    }
-
-</script>
+	<link href="Modules/TopicArticleDisplay.css" rel="stylesheet" type="text/css" /><script type="text/javascript">function OnSendArticle() {var result = window.showModalDialog("/Modules/CMS/SendArticle.aspx", document.URL, "dialogHeight: 320px; dialogWidth: 450px;");}function OnBack() {window.history.back();}function OnGoToHead() {window.moveTo(0, 0);}</script>
 <script type="text/javascript">
 
     $(document).ready(function () {
@@ -502,6 +489,16 @@ IMPORTANT DEADLINES:</span></strong></div>
         background-color: #666666 !important;
     }
 </style>
+
+<ul>
+<li class="rmItem rmLast">
+													<a href="<c:url value="/edit-webpage-10"/>">
+													<span
+														class="rmText">Edit</span>
+													</a>
+												</li>
+
+</ul>
 	
 	</jsp:body>
 </t:templetepage>

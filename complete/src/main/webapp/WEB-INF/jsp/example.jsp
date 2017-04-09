@@ -2,6 +2,8 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 <t:templetepage>
 	<jsp:attribute name="header">     
@@ -12,23 +14,47 @@
 
 	
 
-		<c:forEach items="${webpages}" var="user">
-			<h1>${user.content}</h1>
- <textarea name="txtnoidung" id="txtnoidung" 
- value="${user.content}"></textarea></td>
+<%-- 	
+ <textarea name="txtnoidung" id="txtnoidung" >
+ </textarea>
+ 
+ <input type="submit" value=""/>
+  --%>
+  
+  
+ <div id="trackingDiv"></div>
+		<table>
+<tbody>
+					<c:forEach items="${webpages}" var="web">
+						<tr>
+							<td>${web.page_id}</td>
+							<td>${web.description}</td>
+							<td>${web.content}</td>
+							
+					
+							<td><a href="<c:url value='/delete-page-${web.page_id}' />"
+							class="btn btn-danger custom-width">delete</a></td>
+							
+							
+							
+								<td><a href="<c:url value='/edit-webpage-${web.page_id }' />"
+							class="btn btn-danger custom-width">edit </a></td>
+						</tr>
+					</c:forEach>
+					<td><a href="<c:url value='/new-webpage' />"
+							class="btn btn-danger custom-width">new </a></td>
+		    		</tbody>
+		    	</table>
+		    	
 
 
 <script type="text/javascript" language="javascript">
+	CKEDITOR.replace('txtnoidung');
+</script>  
+	
+	
 
-CKEDITOR.replace( 'txtnoidung' );
-
-</script> 
-	</c:forEach>
-       		<%-- 		<div id='ctl06_portlet_43f9ded1-4c3b-4b8b-8d8a-01a3ec30711c'
-							style="float: left;">
-										<div>
-											<style>
-</style>
+       		<%-- 		<div id='ctl06_portlet_43f9ded1-4c3b-4b8b-8d8a-01a3ec30711c'style="float: left;"><div><style></style>
 											<div id="main">
 												<div id="head"></div>
 												<div id="head-link"></div>

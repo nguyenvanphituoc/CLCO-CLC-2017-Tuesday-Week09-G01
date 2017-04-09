@@ -42,7 +42,6 @@ public class WebInfoServiceImpl implements WebInfoService {
 
 	@Override
 	public List<webInfo> findAllWebPages() {
-		// TODO Auto-generated method stub
 		return dao.findAllWebpages();
 	}
 

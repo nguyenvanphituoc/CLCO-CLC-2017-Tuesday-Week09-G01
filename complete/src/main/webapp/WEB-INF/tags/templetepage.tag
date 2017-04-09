@@ -517,7 +517,8 @@
                         ABSTRACT DEADLINE EXTENSION: MARCH 19, 2017</a></a> </li>
                 
 
-                    <li><a href="indexc489.html?ArticleId=f796f938-0681-4d25-b47e-6bcd24536152">
+                    <li>  <li><a href="<c:url value="/latestnewsThird"/>">
+              
                         <p>Create Date 20/02/2017</p>
                         SPECIAL SESSION 01 FOR ICSSE2017: INTELLIGENT HEALTHCARE SYSTEMS</a></a> </li>
                 

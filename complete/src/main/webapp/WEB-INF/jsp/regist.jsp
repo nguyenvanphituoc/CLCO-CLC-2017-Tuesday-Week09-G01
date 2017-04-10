@@ -2,6 +2,14 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="//cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
 <html>
 
@@ -12,21 +20,20 @@
 </head>
 
 <body>
-	<div class="well lead">User Registration Form</div>
+	<div class="well lead">EDIT PAGE </div>
 	<form:form method="POST" modelAttribute="webInfo"
 		class="form-horizontal">
 			<form:input type="hidden" path="page_id" id="id"/>
-		<label class="col-md-3 control-lable" for="description">description</label>
+		<label class="col-md-3 control-lable" for="description">Description</label>
 		<form:input type="text" path="description" id="description"
 			class="form-control input-sm" />
 </br>
 		<label class="col-md-3 control-lable" for="content">Content</label>
-	<%-- 	<form:input type="text" path="content" id="content"
-			class="form-control input-sm" /> --%>
+		</br>
 			
 		<form:textarea path="content" id="txtnoidung"/>
 
-		<input type="submit" value="Register" class="btn btn-primary btn-sm" /> or <a
+		<input type="submit" value="Submit" class="btn btn-primary btn-sm" /> or <a
 			href="<c:url value='/' />">Cancel</a>
 	</form:form>
 

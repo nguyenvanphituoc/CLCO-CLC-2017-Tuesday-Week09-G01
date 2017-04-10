@@ -3,7 +3,14 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <t:templetepage>
 	<jsp:attribute name="header">     
     </jsp:attribute>
@@ -146,15 +153,10 @@
                         <span style="font-size: 14px;"><br />
 	 ${callpaper.content}
 
-<ul>
-<li class="rmItem rmLast">
-													<a href="<c:url value="/edit-webpage-${callpaper.page_id}"/>">
-													<span
-														class="rmText">Edit</span>
-													</a>
-												</li>
+<a href="<c:url value="/edit-webpage-${callpaper.page_id}"/>"
+				class="btn btn-primary ">EDIT 
+				
+</a>
 
-</ul>
-	
 	</jsp:body>
 </t:templetepage>

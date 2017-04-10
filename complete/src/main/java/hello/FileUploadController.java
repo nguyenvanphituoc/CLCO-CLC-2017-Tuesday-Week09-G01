@@ -116,19 +116,25 @@ public class FileUploadController {
     
     @RequestMapping(value = { "/latestnewsFirst" }, method = RequestMethod.GET)
     public String latestnewsFirst(Model model){
-		return "jsp/index52be.jsp?ArticleId=3af2fa01-2645-4516-a65a-67bfec768e13";	
+    	webInfo webInfo=webInfoService.findById(24);
+    	model.addAttribute("firstnews",webInfo);
+		return "jsp/index52be";	
     }
     
     
     @RequestMapping(value = { "/latestnewsSecond" }, method = RequestMethod.GET)
     public String latestnewsSecond(Model model){
-		return "jsp/indexe41c.jsp?ArticleId=bc474489-26ce-4997-a1c0-b37dce27b202";	
+    	webInfo webInfo=webInfoService.findById(25);
+    	model.addAttribute("secondnews",webInfo);
+		return "jsp/indexe41c";	
     }
     
     
     @RequestMapping(value = { "/latestnewsThird" }, method = RequestMethod.GET)
     public String latestnewsThird(Model model){
-		return "jsp/indexc489.jsp?ArticleId=f796f938-0681-4d25-b47e-6bcd24536152";	
+    	webInfo webInfo=webInfoService.findById(26);
+    	model.addAttribute("thirdnews",webInfo);
+		return "jsp/indexc489";	
     }
     
     
@@ -137,7 +143,7 @@ public class FileUploadController {
 		int id=Integer.parseInt(pageID);
 		webInfoService.deleteUserById(id);
 		
-		return "redirect:/";
+		return "redirect:/admin";
 	}
 	
 	@RequestMapping(value = { "/new-webpage" }, method = RequestMethod.GET)
@@ -153,7 +159,7 @@ public class FileUploadController {
 			ModelMap model) 
 	{
 		webInfoService.saveWebpage(webInfo);
-		return "redirect:/";
+		return "redirect:/admin";
 	}
     
     

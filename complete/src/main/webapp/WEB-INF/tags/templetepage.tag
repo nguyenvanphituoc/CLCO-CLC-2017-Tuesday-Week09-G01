@@ -451,7 +451,7 @@
 													class="rmLink rmRootLink"><span class="rmText">Keynote
 															Speakers</span></a></li>
 												<li class="rmItem "><a
-													href="Portlets/MenuRad/index.html#"
+													
 													class="rmLink rmRootLink"><span class="rmText">Program</span></a></li>
 												<li class="rmItem "><a
 													href="<c:url value="/venuehotel"/>"

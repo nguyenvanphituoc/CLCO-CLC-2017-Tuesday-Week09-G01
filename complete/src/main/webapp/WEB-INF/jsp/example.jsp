@@ -12,21 +12,13 @@
     </jsp:attribute>
 	<jsp:body>
 
-	
-
-
-
-  
-  
- </br>
-</br>
-<%-- 
+ <table>
 					<c:forEach items="${webpages}" var="web">
-				
+					
+				<tbody>
 							<td>${web.page_id}</td>
-							<td>${web.description}</td>
-							<td>${web.content}</td>
 							
+							<td>${web.description}</td>
 					
 							<td><a href="<c:url value='/delete-page-${web.page_id}' />"
 							class="btn btn-danger custom-width">delete</a></td>
@@ -40,13 +32,13 @@
 					<td><a href="<c:url value='/new-webpage' />"
 							class="btn btn-danger custom-width">new </a></td>
 		    		</tbody>
-		    	</table>  --%>
+		    	</table>  
 		    	
-		    	<c:forEach items="${webpages}" var="web">
+		    	<%-- <c:forEach items="${webpages}" var="web">
 		    		${web.content}
 		    	
 		    		</c:forEach>
-		    	
+		    	 --%>
 
 
 	

@@ -7,6 +7,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <title>User Registration Form</title>
 </head>
 
@@ -18,7 +19,7 @@
 		<label class="col-md-3 control-lable" for="description">description</label>
 		<form:input type="text" path="description" id="description"
 			class="form-control input-sm" />
-
+</br>
 		<label class="col-md-3 control-lable" for="content">Content</label>
 	<%-- 	<form:input type="text" path="content" id="content"
 			class="form-control input-sm" /> --%>

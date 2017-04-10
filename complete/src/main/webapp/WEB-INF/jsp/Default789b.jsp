@@ -146,15 +146,15 @@
                         <span style="font-size: 14px;"><br />
 	 ${callpaper.content}
 
-
+<ul>
 <li class="rmItem rmLast">
-													<a href="<c:url value="/edit-webpage-10"/>">
+													<a href="<c:url value="/edit-webpage-${callpaper.page_id}"/>">
 													<span
 														class="rmText">Edit</span>
 													</a>
 												</li>
 
-</ul> --%>
+</ul>
 	
 	</jsp:body>
 </t:templetepage>

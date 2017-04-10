@@ -148,7 +148,16 @@
                    </div>
                    </div>
    ${contact.content}
-    
+    <ul>
+<li class="rmItem rmLast">
+													<a href="<c:url value="/edit-webpage-${contact.page_id}"/>">
+													<span
+														class="rmText">Edit</span>
+													</a>
+												</li>
+
+</ul>
+	
     
 	</jsp:body>
 

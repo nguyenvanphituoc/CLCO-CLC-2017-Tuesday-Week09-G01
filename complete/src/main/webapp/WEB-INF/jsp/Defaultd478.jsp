@@ -9,8 +9,9 @@
     </jsp:attribute>
 	<jsp:attribute name="footer">
     </jsp:attribute>
-    <jsp:body>
-    <link href="Modules/TopicArticleDisplay.css" rel="stylesheet" type="text/css" />
+	<jsp:body>
+    <link href="Modules/TopicArticleDisplay.css" rel="stylesheet"
+			type="text/css" />
 
 <script type="text/javascript">
     function OnSendArticle() {
@@ -39,110 +40,126 @@
 
 </script>
 <style type="text/css">
-    .bg_display {
-        clear: both;
-        float: left;
-        background: #fff;
-    }
+.bg_display {
+	clear: both;
+	float: left;
+	background: #fff;
+}
 
-    .title_display {
-        color: #9F0E13;
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase;
-        border-bottom: 1px dashed #0280bb;
-        padding: 5px 0px 5px 10px;
-        margin: 0px 10px;
-    }
+.title_display {
+	color: #9F0E13;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-bottom: 1px dashed #0280bb;
+	padding: 5px 0px 5px 10px;
+	margin: 0px 10px;
+}
 
-        .title_display a {
-            color: #333 !important;
-        }
+.title_display a {
+	color: #333 !important;
+}
 
-            .title_display a:hover {
-                color: #FF0000 !important;
-            }
+.title_display a:hover {
+	color: #FF0000 !important;
+}
 
-    .ct_tin_display {
-        float: left;
-        width: 670px;
-        padding-bottom: 15px;
-    }
+.ct_tin_display {
+	float: left;
+	width: 670px;
+	padding-bottom: 15px;
+}
 
-    .articleTitle a {
-        margin: 0px 5px 0px 5px;
-        margin-bottom: 10px;
-        color: #0280BB;
-        font-weight: bold;
-        font-size: 16px;
-    }
+.articleTitle a {
+	margin: 0px 5px 0px 5px;
+	margin-bottom: 10px;
+	color: #0280BB;
+	font-weight: bold;
+	font-size: 16px;
+}
 
-    .articleDescription p {
-        font: 13px Arial;
-        color: #000;
-        line-height: 20px;
-        margin: 0px 5px 0px 5px;
-    }
+.articleDescription p {
+	font: 13px Arial;
+	color: #000;
+	line-height: 20px;
+	margin: 0px 5px 0px 5px;
+}
 
+.articleContent {
+	font: 13px Arial;
+	line-height: 150%;
+	text-align: justify;
+	margin: 0px 5px 0px 5px;
+}
 
-    .articleContent {
-        font: 13px Arial;
-        line-height: 150%;
-        text-align: justify;
-        margin: 0px 5px 0px 5px;
-    }
+.articleContent ol, .articleContent ul {
+	padding-left: 40px;
+}
 
-        .articleContent ol, .articleContent ul {
-            padding-left: 40px;
-        }
+.articleContent a, .articleContent p, .articleContent span,
+	.articleContent h1, .articleContent h2, .articleContent h3,
+	.articleContent h4, .articleContent h5, .articleContent h6,
+	.articleContent div, .articleContent ul, .articleContent li,
+	.articleContent table, .articleContent th, .articleContent tr,
+	.articleContent td {
+	font-family: Arial;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 150%;
+}
 
-        .articleContent a, .articleContent p, .articleContent span, .articleContent h1, .articleContent h2,
-        .articleContent h3, .articleContent h4, .articleContent h5, .articleContent h6,
-        .articleContent div, .articleContent ul, .articleContent li, .articleContent table,
-        .articleContent th, .articleContent tr, .articleContent td {
-            font-family: Arial;
-            font-size: 13px;
-            text-align: justify;
-            line-height: 150%;
-        }
+.tinkhac_display {
+	float: left;
+	width: 670px;
+	margin: 0px 5px 0px 25px;
+	list-style-image: url(Resources/ImagesPortal/HomePage/arrow.png);
+}
 
-    .tinkhac_display {
-        float: left;
-        width: 670px;
-        margin: 0px 5px 0px 25px;
-        list-style-image: url(Resources/ImagesPortal/HomePage/arrow.png);
-    }
+.tinkhac_display a {
+	font: 13px Arial;
+	line-height: 20px;
+	color: #333;
+}
 
-        .tinkhac_display a {
-            font: 13px Arial;
-            line-height: 20px;
-            color: #333;
-        }
-
-            .tinkhac_display a:hover {
-                color: #FF0000;
-            }
+.tinkhac_display a:hover {
+	color: #FF0000;
+}
 </style>
 
 <div class="bg_display">
     <div class="display" style="float: left; width: 100%;">
         <div class="title_display">
-             <a style='color:#666;' href=index7c70.html?TopicId=fd0c4c9e-429c-4e2e-a19d-4236dd56945a>submission </a> 
+             <a style='color: #666;'
+						href=index7c70.html?TopicId=fd0c4c9e-429c-4e2e-a19d-4236dd56945a>submission </a> 
         </div>
         <div style="margin-top: 10px;">
             <div style="margin-left: 5px; margin-bottom: 10px;">
                 <div class="ct_tin_display">
                     <div class="articleTitle">
-                        <a href="indexd478.html?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef"></a>
+                        <a
+									href="indexd478.html?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef"></a>
                     </div>
-                    <div style="float:left;width: 100%; margin: 5px 5px 5px 10px;display: none;" >
-                        <span style="font-weight: bold;font-style: italic">Tác giả </span>:
+                    <div
+								style="float: left; width: 100%; margin: 5px 5px 5px 10px; display: none;">
+                        <span
+									style="font-weight: bold; font-style: italic">Tác giả </span>:
                     </div>
                    
                     <div class="articleContent">
                         <span style="font-size: 14px;"><br />
                         
 ${submission.content}
-    </jsp:body>
+
+<ul>
+<li class="rmItem rmLast">
+													<a
+										href="<c:url value="/edit-webpage-${submission.page_id}"/>">
+													<span class="rmText">Edit</span>
+													</a>
+												</li>
+
+</ul>
     
+	</jsp:body>
+
 </t:templetepage>

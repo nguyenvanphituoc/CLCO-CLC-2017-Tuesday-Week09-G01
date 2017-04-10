@@ -142,6 +142,16 @@
                         <span style="font-size: 14px;"><br />
                         
                   ${venuehotel.content}
+                  
+                  <ul>
+<li class="rmItem rmLast">
+													<a href="<c:url value="/edit-webpage-${venuehotel.page_id}"/>">
+													<span
+														class="rmText">Edit</span>
+													</a>
+												</li>
+
+</ul>
 		
 	</jsp:body>
 </t:templetepage>

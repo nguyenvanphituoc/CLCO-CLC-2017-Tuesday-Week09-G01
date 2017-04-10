@@ -47,8 +47,9 @@ public class FileUploadController {
     @RequestMapping("/")
     public String listUploadedFiles(Model model) throws IOException
     {
-    
-        return "jsp/home";
+    	webInfo home=webInfoService.findById(19);
+    	model.addAttribute("home",home);
+        return "jsp/Default71a5";
     }
     @RequestMapping("/admin")
     public String admin(Model model) throws IOException
@@ -102,8 +103,9 @@ public class FileUploadController {
     
     @RequestMapping(value = { "/home_page" }, method = RequestMethod.GET)
     public String homepage(Model model){
-    	
-		return "jsp/Default71a5.jsp?PageId=8cb7e0c5-10f3-438b-8881-a74c24b373e3";	
+    	webInfo home=webInfoService.findById(19);
+    	model.addAttribute("home",home);
+		return "jsp/Default71a5";	
     }
     @RequestMapping(value = { "/venuehotel" }, method = RequestMethod.GET)
     public String hotelmapping(Model model){

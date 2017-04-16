@@ -2,14 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
 <script src="//cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
 <html>
 
@@ -37,7 +30,18 @@
 			href="<c:url value='/' />">Cancel</a>
 	</form:form>
 
-<script type="text/javascript" language="javascript">
-	CKEDITOR.replace('txtnoidung');
-</script>  
+<script>
+		CKEDITOR.replace( 'txtnoidung', {
+			height: 300,
+
+			// Configure your file manager integration. This example uses CKFinder 3 for PHP.
+			filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
+			filebrowserImageBrowseUrl: '/ckfinder/ckfinder.html?type=Images',
+			filebrowserUploadUrl: '/up',
+			filebrowserImageUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+			
+		} );
+	
+		
+	</script>
 </body>

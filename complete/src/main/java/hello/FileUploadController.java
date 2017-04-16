@@ -199,8 +199,20 @@ public class FileUploadController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\""+file.getFilename()+"\"")
                 .body(file);
     }
+    @RequestMapping("/up")
+    public String upload(Model model) throws IOException
+    {
+    	model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
 
-    @PostMapping("/")
+        return "jsp/uploadForm";
+    }
+    @PostMapping("/up")
     public String handleFileUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes) {
 
@@ -208,14 +220,14 @@ public class FileUploadController {
         redirectAttributes.addFlashAttribute("message",
                 "You successfully uploaded " + file.getOriginalFilename() + "!");
 
-        return "redirect:/";
+        return "redirect:/up";
     }
     
-    @GetMapping("/search")
+  /*  @GetMapping("/search")
     public String searchFiles(@RequestParam("fileName") String name, Model model) throws IOException {
     	model.addAttribute("result",fileSearchService.searchFile(name));
         return "uploadForm";
-    }
+    }*/
     
     @ExceptionHandler(StorageFileNotFoundException.class)
     public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {

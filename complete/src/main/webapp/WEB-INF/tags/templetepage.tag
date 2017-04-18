@@ -3,6 +3,14 @@
 <%@tag description="Overall Page template" pageEncoding="UTF-8"%>
 <%@attribute name="header" fragment="true"%>
 <%@attribute name="footer" fragment="true"%>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -488,7 +496,7 @@
 						</div></td>
 
 					</td>
-					<td><div id="pnRight">
+					<%-- <td><div id="pnRight">
 							<div id="pnRightDisplay"
 								style="padding: 0px 0px 0px 6px; width: 300px; float: left">
 								<div id='ctl06_portlet_b633be64-8363-4e53-9952-6acf34d3e9e9'
@@ -704,8 +712,27 @@
 									</div>
 								</div>
 							</div>
-						</div></td>
-				</tr>
+						</div></td> --%>
+					 <td>
+					 <div id="pnRight">
+<div id="pnRightDisplay" style="float:left; padding:0px 0px 0px 6px; width:300px">
+					 ${sidebar.content}
+					 </div>
+</div>
+<a href="<c:url value="/edit-webpage-${sidebar.page_id}"/>"
+							class="btn btn-primary ">EDIT 
+					
+							</a>
+					 </td>
+						
+						</tr>
+						
+						
+	
+				
+					
+						
+						
 				<!-- end of header -->
 				<!-- body -->
 

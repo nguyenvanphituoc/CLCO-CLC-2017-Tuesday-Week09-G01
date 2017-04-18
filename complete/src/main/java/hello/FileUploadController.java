@@ -48,6 +48,8 @@ public class FileUploadController {
     public String listUploadedFiles(Model model) throws IOException
     {
     	webInfo home=webInfoService.findById(19);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
     	model.addAttribute("home",home);
         return "jsp/Default71a5";
     }
@@ -55,6 +57,8 @@ public class FileUploadController {
     public String admin(Model model) throws IOException
     {
     	List<webInfo> webpages=webInfoService.findAllWebPages();
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
     	model.addAttribute("webpages",webpages);
         return "jsp/example";
     }
@@ -65,6 +69,8 @@ public class FileUploadController {
     public String callpaper(Model model){
     
     	webInfo callpaper=webInfoService.findById(10);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
     	model.addAttribute("callpaper",callpaper);
 		return "jsp/Default789b";
     }
@@ -72,7 +78,10 @@ public class FileUploadController {
     @RequestMapping(value = { "/submission" }, method = RequestMethod.GET)
     public String submission(Model model){
     	webInfo submission=webInfoService.findById(15);
+    	
     	model.addAttribute("submission",submission);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/Defaultd478";
     	
     	
@@ -84,6 +93,8 @@ public class FileUploadController {
     	
     	webInfo registration=webInfoService.findById(16);
     	model.addAttribute("registration",registration);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/Defaulta8ef";	
     }
     
@@ -91,6 +102,8 @@ public class FileUploadController {
     public String keynotespeaker(Model model){
     	webInfo keynotespeaker=webInfoService.findById(17);
     	model.addAttribute("keynotespeaker",keynotespeaker);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/Default6b73";	
     }
     
@@ -98,13 +111,18 @@ public class FileUploadController {
     public String contact(Model model){
     	webInfo contact=webInfoService.findById(20);
     	model.addAttribute("contact",contact);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/Default84ba";	
+		
     }
     
     @RequestMapping(value = { "/home_page" }, method = RequestMethod.GET)
     public String homepage(Model model){
     	webInfo home=webInfoService.findById(19);
     	model.addAttribute("home",home);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/Default71a5";	
     }
     @RequestMapping(value = { "/venuehotel" }, method = RequestMethod.GET)

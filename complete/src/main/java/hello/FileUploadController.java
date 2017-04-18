@@ -129,6 +129,8 @@ public class FileUploadController {
     public String hotelmapping(Model model){
     	webInfo venuehotel=webInfoService.findById(18);
     	model.addAttribute("venuehotel",venuehotel);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/Venue_Hotel";	
     }
     
@@ -136,6 +138,8 @@ public class FileUploadController {
     public String latestnewsFirst(Model model){
     	webInfo webInfo=webInfoService.findById(24);
     	model.addAttribute("firstnews",webInfo);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/index52be";	
     }
     
@@ -144,6 +148,8 @@ public class FileUploadController {
     public String latestnewsSecond(Model model){
     	webInfo webInfo=webInfoService.findById(25);
     	model.addAttribute("secondnews",webInfo);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/indexe41c";	
     }
     
@@ -152,6 +158,8 @@ public class FileUploadController {
     public String latestnewsThird(Model model){
     	webInfo webInfo=webInfoService.findById(26);
     	model.addAttribute("thirdnews",webInfo);
+    	webInfo side=webInfoService.findById(27);
+    	model.addAttribute("sidebar",side);
 		return "jsp/indexc489";	
     }
     

@@ -21,15 +21,6 @@
 		<project.http.version>1.22.0</project.http.version>
 		<project.oauth.version>1.22.0</project.oauth.version>
 
-	
-	<INSTANCE_CONNECTION_NAME>icse-2017</INSTANCE_CONNECTION_NAME>
-    <user>root</user>
-    <password>ngockhanh</password>
-    <database>icss2017</database>
-    
-    
-    
-
 	</properties>
 	
 	

@@ -28,6 +28,7 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 @Controller
+@RequestMapping(value = { "/" }, method = RequestMethod.GET)
 public class FileUploadController {
 
     private final StorageService storageService;

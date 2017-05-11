@@ -14,10 +14,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 
-@EnableConfigurationProperties(StorageProperties.class)
-
 @ComponentScan(basePackages = "hello")
 @SpringBootApplication(scanBasePackages = {"hello"})
+
+@EnableConfigurationProperties(StorageProperties.class)
+
 public class Application extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {

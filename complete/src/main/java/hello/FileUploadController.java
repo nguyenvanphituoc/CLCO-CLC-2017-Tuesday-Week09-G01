@@ -28,7 +28,6 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 @Controller
-@RequestMapping(value = { "/" }, method = RequestMethod.GET)
 public class FileUploadController {
 
     private final StorageService storageService;
@@ -45,7 +44,7 @@ public class FileUploadController {
         this.fileSearchService = fileSearchService;
     }
     
-    @RequestMapping("/")
+    @RequestMapping(value = { "/home" }, method = RequestMethod.GET)
     public String listUploadedFiles(Model model) throws IOException
     {
     	webInfo home=webInfoService.findById(19);

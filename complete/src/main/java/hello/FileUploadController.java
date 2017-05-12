@@ -45,8 +45,6 @@ public class FileUploadController {
         this.fileSearchService = fileSearchService;
     }
     
-
- @RequestMapping(value = { "/" }, method = RequestMethod.GET)
     @RequestMapping(value = { "/" }, method = RequestMethod.GET)
 
     public String listUploadedFiles(Model model) throws IOException
